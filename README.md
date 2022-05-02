@@ -1,5 +1,6 @@
 # linebot
 ## Design
+![image](https://user-images.githubusercontent.com/39373272/166206974-8eeec7a7-01fe-415f-8e9c-995120da6342.png)
 - Linebot ID: @695pxvkb
 - To create a more flexible maintained linebot
 - seperate message responsing content and message responsing functions
@@ -8,6 +9,7 @@
 - @line/bot-sdk
 - crypto
 - express
+
 
 
 ## Files
