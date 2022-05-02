@@ -1,5 +1,6 @@
 # linebot
 ## Design
+- Linebot ID: @695pxvkb
 - To create a more flexible maintained linebot
 - seperate message responsing content and message responsing functions
 
@@ -7,6 +8,7 @@
 - @line/bot-sdk
 - crypto
 - express
+
 
 ## Files
 
