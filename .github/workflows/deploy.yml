@@ -16,7 +16,7 @@ jobs:
         node-version: 14.x
         cache: 'npm'
     - run: |
-        cd ./chatbox
+        cd chatbox
         npm install
     
     - name: create environment variable files
