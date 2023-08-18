@@ -1,0 +1,32 @@
+service: my-line-bot-service
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: us-east-1
+
+functions:
+  callback:
+    handler: index.handler
+    events:
+      - http:
+          path: callback
+          method: post
+
+resources:
+  Resources:
+    ExpressAppApiGateway:
+      Type: AWS::ApiGateway::RestApi
+      Properties:
+        Name: ${self:provider.stage}-express-app
+
+plugins:
+  - serverless-apigw-binary
+	
+custom:
+  apigwBinary:
+    types:         
+      - 'image/jpeg'
+      - 'text/html'

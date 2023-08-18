@@ -12,9 +12,15 @@
   "license": "ISC",
   "dependencies": {
     "@line/bot-sdk": "^7.5.0",
+    "aws-serverless-express": "^3.4.0",
     "axios": "^0.26.1",
     "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
     "express": "^4.17.3",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "translate-google": "1.5.0"
+  },
+  "devDependencies": {
+    "serverless-apigw-binary": "^0.4.4"
   }
 }
